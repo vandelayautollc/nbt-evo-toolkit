@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# This repository ships NO owner data, keys, firmware, or vehicle identifiers.
+# These patterns are a safety net so such material is never committed by mistake.
+# If you add a path here, add it because it is YOUR private data — never check it in.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Owner-supplied licensed data (you provide your own; never redistribute)
+psdzdata/
+PSdZData*/
+*.7z
+swe/
+*.caf
+*.caf.*
+cafd_*.decrypted.*
+sec_*.xml
+*.lic
+
+# Recovered keys and signed artifacts (secret / vehicle-specific)
+*.ncd
+*.ncd.*
+*key*.json
+*.key
+*key*.pem
+*.p12
+*.pfx
+ownership.local
+.owner
+
+# Firmware images / flash payloads (licensed; never redistribute)
+*.swfl
+*.swfk
+*.btld
+*.swdl
+*.bin
+firmware/
+flash/
+# …but our own recovered protobuf schema set is ours to ship (not firmware):
+!capabilities/vehicle_models/packager/hmi_descriptors.bin
+
+# Vehicle identifiers / captures
+*vin*
+*VIN*
+*.pcap
+captures/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

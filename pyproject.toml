@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbt-evo-toolkit"
+version = "0.1.0"
+description = "Owner-authorized reverse-engineering notes and tooling for the BMW NBT EVO head unit"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+# Core transport/coding needs only the standard library. Key recovery needs a crypto backend;
+# install the optional extra for it.
+dependencies = []
+
+[project.optional-dependencies]
+crypto = ["cryptography>=42.0"]
+
+[tool.setuptools]
+packages = ["nbtevo"]

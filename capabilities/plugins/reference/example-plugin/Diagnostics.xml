@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PowerTools RA plugin DescFile (2026-09-22).
+     Menu entry "PowerTools" (VehicleInformation) -> state 100 (PowerTools menu),
+     which has two items:
+       "Read DTCs" -> state 200 (DTC tool): "Build module list" (enabled) +
+          "Read DTCs" (greyed until modules built) + separator + results list (model 50).
+       "SVT"       -> state 300 (SVT tool): "Read SVT" (enabled) + separator +
+          results list (model 51). Reads installed software (SVK, UDS 22 F1 01)
+          per live module, filling in module-grouped "CLASS ID VER" lines.
+     Buttons gray via SELECTABLE (property 2) driven by PluginApp::setProperty(
+     componentId, 2, Parcel(bool)). Layout mirrors OEM HmiGen_NavigationRemoteService.
+     No scan happens until a button is pressed. Component ids are all distinct. -->
+<pluginApps>
+  <pluginApp applicationType="VehicleInformation" applicationWeight="200" text="PowerTools">
+    <comment/>
+    <entryButton action="10" id="1">
+      <properties>
+        <property id="23" value="2"/>
+      </properties>
+    </entryButton>
+    <actions>
+      <hmiAction id="10" target="100"/>   <!-- entry -> PowerTools menu -->
+      <hmiAction id="11" target="200"/>   <!-- "Read DTCs" menu item -> DTC tool -->
+      <hmiAction id="12" target="300"/>   <!-- "SVT" menu item -> SVT tool -->
+      <raAction  id="21"/>                <!-- "Build module list" pressed -->
+      <raAction  id="22"/>                <!-- "Read DTCs" (tool) pressed -->
+      <raAction  id="23"/>                <!-- DTC results row selected -->
+      <raAction  id="24"/>                <!-- "Read SVT" pressed -->
+      <raAction  id="25"/>                <!-- SVT results row selected -->
+      <raAction  id="26"/>                <!-- OPTION menu: Re-read DTCs -->
+      <raAction  id="27"/>                <!-- OPTION menu: Clear DTCs -->
+    </actions>
+    <models>
+      <raListModel id="50"/>              <!-- DTC module / results list -->
+      <raListModel id="51"/>              <!-- SVT left list: Vehicle Info + module rows -->
+      <raDataModel id="52" modelType="Richtext"/>  <!-- SVT right pane: multi-line detail text -->
+    </models>
+    <hmiStates>
+      <hmiState id="100" text="PowerTools">
+        <components>
+          <button id="2" action="11" text="Read DTCs"/>
+          <button id="7" action="12" text="SVT"/>
+        </components>
+      </hmiState>
+      <!-- DTC tool: full-width single list (layoutGroup "List" spans the whole
+           content area, ~1280px, so the list uses the full width / scrollbar at the
+           far right). Master-detail reformat deferred; SVT screen (300) is split. -->
+      <hmiState id="200" text="Read DTCs">
+        <layoutGroups>
+          <layoutGroup name="List" width="1280"/>
+        </layoutGroups>
+        <!-- OPTION-button menu for this screen: whole-car "Re-read DTCs" / "Clear DTCs"
+             (raActions 26/27). optionComponents is parsed by HmiMain3D (createOptionComponents);
+             for an RA plugin the buttons carry raActions back to us. -->
+        <optionComponents>
+          <button id="12" action="26" text="Re-read DTCs"/>
+          <button id="13" action="27" text="Clear DTCs"/>
+        </optionComponents>
+        <components>
+          <button id="3" action="21" text="Build module list">
+            <properties>
+              <property id="2" value="true"/>    <!-- SELECTABLE: enabled -->
+            </properties>
+          </button>
+          <button id="4" action="22" text="Read DTCs">
+            <properties>
+              <property id="2" value="false"/>   <!-- SELECTABLE: greyed until modules built -->
+            </properties>
+          </button>
+          <separator id="5"/>
+          <list id="6" model="50" action="23"/>
+        </components>
+      </hmiState>
+      <!-- SVT master-detail: layoutGroup "List" scopes the LEFT column to 700px
+           (OEM SecurityMenu pattern); the right detail list is absolutely positioned
+           (props 20=POS_X, 21=POS_Y, 9=WIDTH, 10=HEIGHT) in the remaining space.
+           Left list 51 (selectable, raAction 25) drives right list 52 (display only). -->
+      <hmiState id="300" text="SVT">
+        <layoutGroups>
+          <layoutGroup name="List" width="700"/>
+        </layoutGroups>
+        <components>
+          <button id="8" action="24" text="Read SVT">
+            <properties>
+              <property id="2" value="true"/>    <!-- SELECTABLE: enabled -->
+            </properties>
+          </button>
+          <separator id="9"/>
+          <list id="10" model="51" action="25"/>            <!-- left: Vehicle Info + modules -->
+          <label id="11" model="52">                         <!-- right: multi-line detail (Richtext, display-only) -->
+            <properties>
+              <property id="20" value="720"/>   <!-- POSITION_X -->
+              <property id="21" value="96"/>    <!-- POSITION_Y -->
+              <property id="9"  value="520"/>   <!-- WIDTH -->
+              <property id="10" value="360"/>   <!-- HEIGHT -->
+            </properties>
+          </label>
+        </components>
+      </hmiState>
+    </hmiStates>
+  </pluginApp>
+</pluginApps>

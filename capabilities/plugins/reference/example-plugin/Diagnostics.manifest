@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+	<name>Diagnostics</name>
+	<type>App</type>
+	<file>{pluginDir}/Diagnostics</file>
+	<config>
+		<autoStart>yes</autoStart>
+		<dependencies>
+			<pluginAppConnector>
+				<type>Etch</type>
+				<id>100</id>
+				<asyncCallbacks>yes</asyncCallbacks>
+			</pluginAppConnector>
+		</dependencies>
+		<parameters>
+			<DescFile>{pluginDir}/Diagnostics.xml</DescFile>
+		</parameters>
+	</config>
+</plugin>
