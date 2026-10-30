@@ -51,7 +51,7 @@
   "mask": "00000100b",
   "field": "bit2",
   "default": "01",
-  "fa_gate": "NOT 609 Professional navigation system / 8LH Country control 04142",
+  "fa_gate": "NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    79,
    383
@@ -75,7 +75,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "01",
-  "fa_gate": "NOT 609 Professional navigation system / 8LH Country control 04142",
+  "fa_gate": "NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    79,
    383
@@ -534,7 +534,7 @@
   "mask": "00000010b",
   "field": "bit1",
   "default": "01",
-  "fa_gate": "NOT 8LH Country control 04142",
+  "fa_gate": "NOT 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    383
   ],
@@ -603,7 +603,7 @@
   "mask": "00010000b",
   "field": "bit4",
   "default": "00",
-  "fa_gate": "8LH Country control 04142",
+  "fa_gate": "8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    383
   ],
@@ -775,7 +775,7 @@
   "mask": "01000000b",
   "field": "bit6",
   "default": "00",
-  "fa_gate": "NOT 609 Professional navigation system / 8LH Country control 04142",
+  "fa_gate": "NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    79,
    383
@@ -1444,7 +1444,7 @@
   "mask": "00000010b",
   "field": "bit1",
   "default": "00",
-  "fa_gate": "NOT 609 Professional navigation system / 8LH Country control 04142",
+  "fa_gate": "NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    79,
    383
@@ -2681,7 +2681,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "8LT Country control 04825 ",
+  "fa_gate": "8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    551
   ],
@@ -2694,7 +2694,7 @@
   },
   "confidence": "high",
   "source": "firmware-token",
-  "notes": "Token ENT_TAIWAN_SEARCH_READING; FA gate: 8LT Country control 04825; no enum names in syset."
+  "notes": "Token ENT_TAIWAN_SEARCH_READING; FA gate: 8LT Country-specific control 04825 (Taiwan); no enum names in syset."
  },
  {
   "coord": "3000/21/00010000b",
@@ -2704,7 +2704,7 @@
   "mask": "00010000b",
   "field": "bit4",
   "default": "00",
-  "fa_gate": "8LT Country control 04825 ",
+  "fa_gate": "8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    551
   ],
@@ -2717,7 +2717,7 @@
   },
   "confidence": "high",
   "source": "firmware-token",
-  "notes": "Token ENT_TAIWAN_SPELLER_VARIANT; enum SPELLER_OHNE_MAPPING=0, SPELLER_MIT_MAPPING=1; FA gate: 8LT Country control."
+  "notes": "Token ENT_TAIWAN_SPELLER_VARIANT; enum SPELLER_OHNE_MAPPING=0, SPELLER_MIT_MAPPING=1; FA gate: 8LT Country-specific control 04825 (Taiwan)."
  },
  {
   "coord": "3000/21/01100000b",
@@ -3909,7 +3909,7 @@
   "mask": "00000111b",
   "field": "bits2,1,0",
   "default": "00",
-  "fa_gate": "807 Japanese version / 8LH Country control 04142",
+  "fa_gate": "807 Japanese version / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    118,
    383
@@ -4044,7 +4044,7 @@
   "mask": "00000100b",
   "field": "bit2",
   "default": "00",
-  "fa_gate": "807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142",
+  "fa_gate": "807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    118,
    120,
@@ -4071,7 +4071,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142",
+  "fa_gate": "807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    118,
    120,
@@ -4472,7 +4472,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "NOT 8LH Country control 04142 / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
+  "fa_gate": "NOT 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
   "gate_crits": [
    383,
    2096,
@@ -5282,7 +5282,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    79,
    117,
@@ -5623,7 +5623,7 @@
   "mask": "00000010b",
   "field": "bit1",
   "default": "00",
-  "fa_gate": "807 Japanese version / vehicle type-key attribute group (FP category 7; 103 type tokens, e.g. 12CK,12CL,12DE,1A12) / 8LH Country control 04142",
+  "fa_gate": "807 Japanese version / vehicle type-key attribute group (FP category 7; 103 type tokens, e.g. 12CK,12CL,12DE,1A12) / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    118,
    176,
@@ -6958,7 +6958,7 @@
   "mask": "00100000b",
   "field": "bit5",
   "default": "00",
-  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825  / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices",
+  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices",
   "gate_crits": [
    77,
    79,
@@ -8650,7 +8650,7 @@
   "mask": "00011100b",
   "field": "bits4,3,2",
   "default": "00",
-  "fa_gate": "807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    118,
    120,
@@ -8677,7 +8677,7 @@
   "mask": "11100000b",
   "field": "bits7,6,5",
   "default": "00",
-  "fa_gate": "807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    118,
    120,
@@ -8704,7 +8704,7 @@
   "mask": "00000111b",
   "field": "bits2,1,0",
   "default": "00",
-  "fa_gate": "807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    118,
    120,
@@ -12359,7 +12359,7 @@
   "mask": "00100000b",
   "field": "bit5",
   "default": "00",
-  "fa_gate": "8AA Chinese version / 8LH Country control 04142",
+  "fa_gate": "8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    132,
    383
@@ -12373,7 +12373,7 @@
   },
   "confidence": "high",
   "source": "firmware-token",
-  "notes": "Token RDS_CHARACTER_SET; FA-gate: 8AA Chinese version / 8LH Country control 04142."
+  "notes": "Token RDS_CHARACTER_SET; FA-gate: 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao)."
  },
  {
   "coord": "3002/7/01000000b",
@@ -13039,7 +13039,7 @@
   "mask": "00000001b",
   "field": "bit0",
   "default": "00",
-  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    117,
    118,
@@ -13523,7 +13523,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 822 Gulf version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 822 Gulf version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    117,
    118,
@@ -13799,7 +13799,7 @@
   "mask": "00000001b",
   "field": "bit0",
   "default": "00",
-  "fa_gate": "601 TV Function / 609 Professional navigation system / 654 DAB tuner / 802 Korean version / 807 Japanese version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825  / 6NH Hands-free system with USB interface / 6NS Comfort telephony with expanded smartphone connection / 6AE TeleServices / vehicle type-key attribute group (FP category 1; 13 type tokens, e.g. 1H91,1H92,1H93,1J31)",
+  "fa_gate": "601 TV Function / 609 Professional navigation system / 654 DAB tuner / 802 Korean version / 807 Japanese version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6NH Hands-free system with USB interface / 6NS Comfort telephony with expanded smartphone connection / 6AE TeleServices / vehicle type-key attribute group (FP category 1; 13 type tokens, e.g. 1H91,1H92,1H93,1J31)",
   "gate_crits": [
    75,
    79,
@@ -13905,7 +13905,7 @@
   "mask": "11000000b",
   "field": "bits7,6",
   "default": "00",
-  "fa_gate": "802 Korean version / 8LS Country control 00780 / 8LH Country control 04142",
+  "fa_gate": "802 Korean version / 8LS Country control 00780 / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    117,
    305,
@@ -13920,7 +13920,7 @@
   },
   "confidence": "high",
   "source": "firmware-token",
-  "notes": "Token DAB_EPG; FA-gate: 802 Korean / 8LS Country control 00780 / 8LH Country control 04142."
+  "notes": "Token DAB_EPG; FA-gate: 802 Korean / 8LS Country control 00780 / 8LH Country-specific control 04142 (Hong Kong, Macao)."
  },
  {
   "coord": "3002/56/11111111b",
@@ -15135,7 +15135,7 @@
   "mask": "00100000b",
   "field": "bit5",
   "default": "00",
-  "fa_gate": "NOT 807 Japanese version / 810 Australian version / 8LH Country control 04142 / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
+  "fa_gate": "NOT 807 Japanese version / 810 Australian version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
   "gate_crits": [
    118,
    120,
@@ -15270,7 +15270,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "NOT 807 Japanese version / 8LH Country control 04142 / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
+  "fa_gate": "NOT 807 Japanese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
   "gate_crits": [
    118,
    383,
@@ -16220,7 +16220,7 @@
   "mask": "00100000b",
   "field": "bit5",
   "default": "00",
-  "fa_gate": "807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    118,
    132,
@@ -16414,7 +16414,7 @@
   "mask": "00100000b",
   "field": "bit5",
   "default": "00",
-  "fa_gate": "NOT 807 Japanese version / 810 Australian version / 8LH Country control 04142 / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
+  "fa_gate": "NOT 807 Japanese version / 810 Australian version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging",
   "gate_crits": [
    118,
    120,
@@ -17025,7 +17025,7 @@
   "mask": "00100000b",
   "field": "bit5",
   "default": "00",
-  "fa_gate": "NOT 8LH Country control 04142",
+  "fa_gate": "NOT 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    383
   ],
@@ -17048,7 +17048,7 @@
   "mask": "01000000b",
   "field": "bit6",
   "default": "00",
-  "fa_gate": "NOT 8LH Country control 04142",
+  "fa_gate": "NOT 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    383
   ],
@@ -17601,7 +17601,7 @@
   "mask": "00000110b",
   "field": "bits2,1",
   "default": "00",
-  "fa_gate": "601 TV Function / 609 Professional navigation system / 8LH Country control 04142 / 6NF Music interface for smartphones / 6NR Apps / 6NS Comfort telephony with expanded smartphone connection",
+  "fa_gate": "601 TV Function / 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NF Music interface for smartphones / 6NR Apps / 6NS Comfort telephony with expanded smartphone connection",
   "gate_crits": [
    75,
    79,
@@ -19474,7 +19474,7 @@
   "mask": "00000011b",
   "field": "bits1,0",
   "default": "00",
-  "fa_gate": "8AA Chinese version / 8LH Country control 04142",
+  "fa_gate": "8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao)",
   "gate_crits": [
    132,
    383
@@ -21782,7 +21782,7 @@
   "mask": "00000001b",
   "field": "bit0",
   "default": "00",
-  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / 645 Radio control US / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country control 04142 / 8LT Country control 04825  / 6AE TeleServices",
+  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / 645 Radio control US / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6AE TeleServices",
   "gate_crits": [
    117,
    118,
@@ -21919,7 +21919,7 @@
   "mask": "01000000b",
   "field": "bit6",
   "default": "00",
-  "fa_gate": "NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    77,
    79,
@@ -21993,7 +21993,7 @@
   "mask": "00000010b",
   "field": "bit1",
   "default": "00",
-  "fa_gate": "609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    79,
    117,
@@ -22020,7 +22020,7 @@
   "mask": "00000100b",
   "field": "bit2",
   "default": "00",
-  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    77,
    79,
@@ -22048,7 +22048,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    77,
    79,
@@ -22076,7 +22076,7 @@
   "mask": "00010000b",
   "field": "bit4",
   "default": "00",
-  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    79,
    117,
@@ -22123,7 +22123,7 @@
   "mask": "01000000b",
   "field": "bit6",
   "default": "00",
-  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    79,
    117,
@@ -22150,7 +22150,7 @@
   "mask": "10000000b",
   "field": "bit7",
   "default": "00",
-  "fa_gate": "NOT 606 Navigation system Business / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 606 Navigation system Business / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    77,
    117,
@@ -22222,7 +22222,7 @@
   "mask": "00000100b",
   "field": "bit2",
   "default": "00",
-  "fa_gate": "609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825  / ECSM Deletion of Car Sharing Module / 5GC Preparation of Flexible Car Use",
+  "fa_gate": "609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / ECSM Deletion of Car Sharing Module / 5GC Preparation of Flexible Car Use",
   "gate_crits": [
    79,
    117,
@@ -22380,7 +22380,7 @@
   "mask": "00000010b",
   "field": "bit1",
   "default": "00",
-  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    79,
    117,
@@ -22407,7 +22407,7 @@
   "mask": "00000100b",
   "field": "bit2",
   "default": "00",
-  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    117,
    118,
@@ -22562,7 +22562,7 @@
   "mask": "00000010b",
   "field": "bit1",
   "default": "00",
-  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    117,
    118,
@@ -22588,7 +22588,7 @@
   "mask": "00000100b",
   "field": "bit2",
   "default": "00",
-  "fa_gate": "802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    117,
    118,
@@ -22614,7 +22614,7 @@
   "mask": "00001000b",
   "field": "bit3",
   "default": "00",
-  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    77,
    79,
@@ -22680,7 +22680,7 @@
   "mask": "10000000b",
   "field": "bit7",
   "default": "00",
-  "fa_gate": "609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    79,
    117,
@@ -22787,7 +22787,7 @@
   "mask": "00100000b",
   "field": "bit5",
   "default": "00",
-  "fa_gate": "NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    77,
    79,
@@ -23255,7 +23255,7 @@
   "mask": "00001110b",
   "field": "bits3,2,1",
   "default": "01",
-  "fa_gate": "802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    117,
    118,
@@ -23594,7 +23594,7 @@
   "mask": "00000001b",
   "field": "bit0",
   "default": "00",
-  "fa_gate": "802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    117,
    118,
@@ -24064,7 +24064,7 @@
   "mask": "00000010b",
   "field": "bit1",
   "default": "00",
-  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    79,
    117,
@@ -24564,7 +24564,7 @@
   "mask": "00010000b",
   "field": "bit4",
   "default": "00",
-  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country control 04142 / 8LT Country control 04825  / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices",
+  "fa_gate": "NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices",
   "gate_crits": [
    117,
    118,
@@ -25491,7 +25491,7 @@
   "mask": "11000000b",
   "field": "bits7,6",
   "default": "00",
-  "fa_gate": "866 Language version simplified Chinese / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "866 Language version simplified Chinese / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    152,
    383,
@@ -25517,7 +25517,7 @@
   "mask": "00000011b",
   "field": "bits1,0",
   "default": "00",
-  "fa_gate": "NOT 866 Language version simplified Chinese / 8LH Country control 04142 / 8LT Country control 04825 ",
+  "fa_gate": "NOT 866 Language version simplified Chinese / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)",
   "gate_crits": [
    152,
    383,

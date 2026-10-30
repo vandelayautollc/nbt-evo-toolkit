@@ -39,7 +39,7 @@ Enables the Cover Flow album-art browsing mode in the entertainment system. Acti
 | `0` | Off |
 | `1` | On |
 
-default `01`· gate: NOT 609 Professional navigation system / 8LH Country control 04142· token `ENT_COVERFLOW`· source: firmware-token
+default `01`· gate: NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `ENT_COVERFLOW`· source: firmware-token
 
 ### `3000/0/00001000b` — Cover Flow via USB  ·  _high_
 
@@ -50,7 +50,7 @@ Enables Cover Flow album-art browsing specifically for media played from a USB d
 | `0` | Off |
 | `1` | On |
 
-default `01`· gate: NOT 609 Professional navigation system / 8LH Country control 04142· token `ENT_COVERFLOW_USB`· source: firmware-token
+default `01`· gate: NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `ENT_COVERFLOW_USB`· source: firmware-token
 
 ### `3000/0/00010000b` — Undocumented feature flag (SL05)  ·  _low_
 
@@ -285,7 +285,7 @@ Enables the drive slot/cover UI for the head-unit's built-in optical drive. Acti
 | `0` | Off (no drive/cover shown) |
 | `1` | On (drive cover shown) |
 
-default `01`· gate: NOT 8LH Country control 04142· token `ENT_HU_DRIVE_COVER`· source: firmware-token
+default `01`· gate: NOT 8LH Country-specific control 04142 (Hong Kong, Macao)· token `ENT_HU_DRIVE_COVER`· source: firmware-token
 
 ### `3000/5/00000100b` — Video only with parking brake set  ·  _med_
 
@@ -318,7 +318,7 @@ Locks video playback on the central display up front. Enabled at the factory for
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 8LH Country control 04142· token `VIDEO_FRONT_LOCKED`· source: firmware-token
+default `00`· gate: 8LH Country-specific control 04142 (Hong Kong, Macao)· token `VIDEO_FRONT_LOCKED`· source: firmware-token
 
 ### `3000/5/11100000b` — Rear-seat entertainment extended options  ·  _med_
 
@@ -403,7 +403,7 @@ Turns on video playback in the media menu. Video while driving follows the head 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 609 Professional navigation system / 8LH Country control 04142· token `ENT_VIDEO`· source: firmware-token
+default `00`· gate: NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `ENT_VIDEO`· source: firmware-token
 
 ### `3000/6/10000000b` — Miracast screen mirroring  ·  _high_
 
@@ -759,7 +759,7 @@ Enables album cover art display in the Media Centre (internal HDD library) brows
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: NOT 609 Professional navigation system / 8LH Country control 04142· token `ENT_MC_COVER`· source: firmware-token
+default `00`· gate: NOT 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `ENT_MC_COVER`· source: firmware-token
 
 ### `3000/13/00000100b` — Media Centre video support  ·  _med_
 
@@ -1403,7 +1403,7 @@ Enables the Taiwan phonetic reading input mode for music search. Active for Taiw
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: 8LT Country control 04825 · token `ENT_TAIWAN_SEARCH_READING`· source: firmware-token
+default `00`· gate: 8LT Country-specific control 04825 (Taiwan)· token `ENT_TAIWAN_SEARCH_READING`· source: firmware-token
 
 ### `3000/21/00010000b` — Taiwan speller input variant  ·  _high_
 
@@ -1414,7 +1414,7 @@ Selects the Taiwan speller keyboard variant (with or without phonetic mapping fo
 | `0` | Speller without phonetic mapping |
 | `1` | Speller with phonetic mapping |
 
-default `00`· gate: 8LT Country control 04825 · token `ENT_TAIWAN_SPELLER_VARIANT`· source: firmware-token
+default `00`· gate: 8LT Country-specific control 04825 (Taiwan)· token `ENT_TAIWAN_SPELLER_VARIANT`· source: firmware-token
 
 ### `3000/21/01100000b` — Bowers & Wilkins high-end audio system menu  ·  _high_
 
@@ -2056,7 +2056,7 @@ Controls how text/address input via the speller or touchpad is locked while the 
 | `2` | Touch screen and touchpad locked |
 | `3` | All input locked |
 
-default `00`· gate: 807 Japanese version / 8LH Country control 04142· token `SPEEDLOCK_SPELLER_INPUT`· source: firmware-token
+default `00`· gate: 807 Japanese version / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `SPEEDLOCK_SPELLER_INPUT`· source: firmware-token
 
 ### `3000/31/00111000b` — Speed lock: destination text display length  ·  _high_
 
@@ -2123,7 +2123,7 @@ Blocks opening the Integrated Owner's Manual from a Check Control message while 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142· token `SPEEDLOCK_IBA_ACCESS_CCM`· source: firmware-trace
+default `00`· gate: 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `SPEEDLOCK_IBA_ACCESS_CCM`· source: firmware-trace
 
 ### `3000/32/00001000b` — Speed lock: owner's manual short form  ·  _low_
 
@@ -2134,7 +2134,7 @@ Blocks the short form of the Integrated Owner's Manual while the car is moving. 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142· token `SPEEDLOCK_IBA_SHORT`· source: firmware-trace
+default `00`· gate: 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `SPEEDLOCK_IBA_SHORT`· source: firmware-trace
 
 ### `3000/32/00010000b` — Speed lock: owner's manual index  ·  _med_
 
@@ -2336,7 +2336,7 @@ Enables the BMW Connected Drive 'Office' menu group (messages, calendar, tasks, 
 | `0` | Off/inactive |
 | `1` | On/active |
 
-default `00`· gate: NOT 8LH Country control 04142 / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `OFFICE_MENUS_ACTIVE`· source: firmware-token
+default `00`· gate: NOT 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `OFFICE_MENUS_ACTIVE`· source: firmware-token
 
 ### `3000/36/00010000b` — Battery charge control: configurable home/residential mode  ·  _med_
 
@@ -2748,7 +2748,7 @@ Shows enlarged views of complex intersections and highway exits during route gui
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `GUIDING_PLUS`· source: firmware-trace
+default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `GUIDING_PLUS`· source: firmware-trace
 
 ### `3000/57/00110000b` — High-end audio menu / staging level  ·  _high_
 
@@ -2919,7 +2919,7 @@ Sets the default traffic-side for the tourist/driving-on-right headlamp assistan
 | `0` | Right-hand traffic (standard) |
 | `1` | Left-hand traffic (UK/Japan/AU) |
 
-default `00`· gate: 807 Japanese version / vehicle type-key attribute group (FP category 7; 103 type tokens, e.g. 12CK,12CL,12DE,1A12) / 8LH Country control 04142· token `TOURISTLIGHT_RIGHTHANDDRIVE`· source: firmware-token
+default `00`· gate: 807 Japanese version / vehicle type-key attribute group (FP category 7; 103 type tokens, e.g. 12CK,12CL,12DE,1A12) / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `TOURISTLIGHT_RIGHTHANDDRIVE`· source: firmware-token
 
 ### `3000/92/00000100b` — Text abbreviation / truncation  ·  _med_
 
@@ -3605,7 +3605,7 @@ Enables automatic clock adjustment for daylight saving time transitions and/or G
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825  / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices· token `CLOCK_CHANGE_AUTOMATIC`· source: firmware-token
+default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices· token `CLOCK_CHANGE_AUTOMATIC`· source: firmware-token
 
 ### `3000/105/11000000b` — Reserved (byte 105 bits 7,6)  ·  _low_
 
@@ -4399,7 +4399,7 @@ Limits how much of a My Info message the head unit shows while the car is moving
 | `1` | First page only |
 | `7` | Full text |
 
-default `00`· gate: 807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825 · token `MYINFO_DRIVING_TEXT_LENGTH`· source: firmware-token
+default `00`· gate: 807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `MYINFO_DRIVING_TEXT_LENGTH`· source: firmware-token
 
 ### `3000/137/11100000b` — Text while driving: AKD messages  ·  _med_
 
@@ -4411,7 +4411,7 @@ Limits how much of an AKD message the head unit shows while the car is moving: n
 | `1` | First page only |
 | `7` | Full text |
 
-default `00`· gate: 807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825 · token `AKD_DRIVING_TEXT_LENGTH`· source: firmware-token
+default `00`· gate: 807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `AKD_DRIVING_TEXT_LENGTH`· source: firmware-token
 
 ### `3000/138/00000111b` — Text while driving: BMW Info messages  ·  _med_
 
@@ -4423,7 +4423,7 @@ Limits how much of a BMW Info message (a message BMW sends to the car) the head 
 | `1` | First page only |
 | `7` | Full text |
 
-default `00`· gate: 807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825 · token `BMWINFO_DRIVING_TEXT_LENGTH`· source: firmware-token
+default `00`· gate: 807 Japanese version / 810 Australian version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `BMWINFO_DRIVING_TEXT_LENGTH`· source: firmware-token
 
 ### `3000/138/00111000b` — Standstill rule for Services messages  ·  _med_
 
@@ -6220,7 +6220,7 @@ Selects the character encoding used to decode RDS text. Default uses the standar
 | `0` | Default (Latin/standard) |
 | `1` | Chinese |
 
-default `00`· gate: 8AA Chinese version / 8LH Country control 04142· token `RDS_CHARACTER_SET`· source: firmware-token
+default `00`· gate: 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `RDS_CHARACTER_SET`· source: firmware-token
 
 ### `3002/7/01000000b` — SiriusXM favourite alert popup  ·  _high_
 
@@ -6574,7 +6574,7 @@ Enables the TP (Traffic Programme) RDS filter checkbox in the tuner UI, allowing
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country control 04142 / 8LT Country control 04825 · token `CHECKBOX_TP`· source: firmware-token
+default `00`· gate: NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `CHECKBOX_TP`· source: firmware-token
 
 ### `3002/28/00000010b` — Weather Band radio  ·  _high_
 
@@ -6823,7 +6823,7 @@ Makes the shortwave (SW) band available in the radio, alongside FM and AM. Set p
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 802 Korean version / 807 Japanese version / 822 Gulf version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country control 04142 / 8LT Country control 04825 · token `RADIO_BAND_KW`· source: firmware-token
+default `00`· gate: NOT 802 Korean version / 807 Japanese version / 822 Gulf version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 232 type tokens, e.g. 11CK,11CL,11DE,12CK) / 645 Radio control US / 825 Radio control Oceania / 8LS Country control 00780 / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `RADIO_BAND_KW`· source: firmware-token
 
 ### `3002/52/00110000b` — DAB slideshow image timeout  ·  _high_
 
@@ -6963,7 +6963,7 @@ Enables the DAB Journaline data service, which provides text-based news, sports,
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: 601 TV Function / 609 Professional navigation system / 654 DAB tuner / 802 Korean version / 807 Japanese version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country control 04142 / 8LT Country control 04825  / 6NH Hands-free system with USB interface / 6NS Comfort telephony with expanded smartphone connection / 6AE TeleServices / vehicle type-key attribute group (FP category 1; 13 type tokens, e.g. 1H91,1H92,1H93,1J31)· token `DAB_JOURNALINE`· source: firmware-token
+default `00`· gate: 601 TV Function / 609 Professional navigation system / 654 DAB tuner / 802 Korean version / 807 Japanese version / 8AA Chinese version / vehicle type-key attribute group (FP category 17; 33 type tokens, e.g. 1F53,1F73,1F93,1G93) / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6NH Hands-free system with USB interface / 6NS Comfort telephony with expanded smartphone connection / 6AE TeleServices / vehicle type-key attribute group (FP category 1; 13 type tokens, e.g. 1H91,1H92,1H93,1J31)· token `DAB_JOURNALINE`· source: firmware-token
 
 ### `3002/55/00000010b` — Telephony audio offset enable  ·  _med_
 
@@ -7008,7 +7008,7 @@ Selects the EPG display format for DAB radio. Determines whether the programme g
 | `1` | Now/Next + Details |
 | `2` | Now/Next + Details + Day view |
 
-default `00`· gate: 802 Korean version / 8LS Country control 00780 / 8LH Country control 04142· token `DAB_EPG`· source: firmware-token
+default `00`· gate: 802 Korean version / 8LS Country control 00780 / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `DAB_EPG`· source: firmware-token
 
 ### `3002/56/11111111b` — Audio signal routing block  ·  _med_
 
@@ -7590,7 +7590,7 @@ Enables display of contact photos/pictures downloaded from the paired phone alon
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: NOT 807 Japanese version / 810 Australian version / 8LH Country control 04142 / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `CONTACT_BOOK_PICTURES`· source: firmware-token
+default `00`· gate: NOT 807 Japanese version / 810 Australian version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `CONTACT_BOOK_PICTURES`· source: firmware-token
 
 ### `3003/8/01000000b` — Bluetooth handset (cordless handset support)  ·  _med_
 
@@ -7650,7 +7650,7 @@ Enables the macro-level PIM (Personal Information Manager) feature set, providin
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: NOT 807 Japanese version / 8LH Country control 04142 / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `MACRO_PIM`· source: firmware-token
+default `00`· gate: NOT 807 Japanese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `MACRO_PIM`· source: firmware-token
 
 ### `3003/10/00110000b` — Reserved bits (3003 byte 10, bits 5-4)  ·  _low_
 
@@ -8119,7 +8119,7 @@ Enables the Asian (Japanese/Chinese) initial-character speller layout for the ph
 | `0` | Off/inactive |
 | `1` | On/active |
 
-default `00`· gate: 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `CONTACTS_INITIAL_SPELLER_ASIA`· source: firmware-token
+default `00`· gate: 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `CONTACTS_INITIAL_SPELLER_ASIA`· source: firmware-token
 
 ### `3003/18/01000000b` — Contacts: Japan phonetic search enable  ·  _high_
 
@@ -8206,7 +8206,7 @@ Enables synchronisation of images/photos from the paired phone to the Personal I
 | `0` | Off/inactive |
 | `1` | On/active |
 
-default `00`· gate: NOT 807 Japanese version / 810 Australian version / 8LH Country control 04142 / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `PIM_BILDER_EIN_AUS`· source: firmware-token
+default `00`· gate: NOT 807 Japanese version / 810 Australian version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NK Connection for Bluetooth and USB devices / 6NL Connecting Bluetooth and USB devices including BMW assist / 6NS Comfort telephony with expanded smartphone connection / 6NW Telephony with wireless charging· token `PIM_BILDER_EIN_AUS`· source: firmware-token
 
 ### `3003/19/01000000b` — PIM calendar sync enable  ·  _high_
 
@@ -8494,7 +8494,7 @@ Enables display of album artwork embedded in USB media files (ID3/MP4 cover art)
 | `0` | Off/inactive |
 | `1` | On/active |
 
-default `00`· gate: NOT 8LH Country control 04142· token `CDMM_USB_COVER_ART`· source: firmware-token
+default `00`· gate: NOT 8LH Country-specific control 04142 (Hong Kong, Macao)· token `CDMM_USB_COVER_ART`· source: firmware-token
 
 ### `3003/23/01000000b` — iPod cover art display enable  ·  _high_
 
@@ -8505,7 +8505,7 @@ Enables display of album artwork from iPod/iPhone devices connected via USB iAP.
 | `0` | Off/inactive |
 | `1` | On/active |
 
-default `00`· gate: NOT 8LH Country control 04142· token `CDMM_USB_COVER_ART_IPOD`· source: firmware-token
+default `00`· gate: NOT 8LH Country-specific control 04142 (Hong Kong, Macao)· token `CDMM_USB_COVER_ART_IPOD`· source: firmware-token
 
 ### `3003/23/10000000b` — Reserved bit (byte 23, bit 7)  ·  _low_
 
@@ -8797,7 +8797,7 @@ Chooses the USB ports on which video files from a USB drive or player can play. 
 
 Bits (set = on): bit 0 First USB port; bit 1 Second USB port
 
-default `00`· gate: 601 TV Function / 609 Professional navigation system / 8LH Country control 04142 / 6NF Music interface for smartphones / 6NR Apps / 6NS Comfort telephony with expanded smartphone connection· token `API_USB_VIDEO`· source: firmware-token
+default `00`· gate: 601 TV Function / 609 Professional navigation system / 8LH Country-specific control 04142 (Hong Kong, Macao) / 6NF Music interface for smartphones / 6NR Apps / 6NS Comfort telephony with expanded smartphone connection· token `API_USB_VIDEO`· source: firmware-token
 
 ### `3003/32/00011000b` — iPod video playback port assignment  ·  _high_
 
@@ -9741,7 +9741,7 @@ Selects the GPS coordinate format/datum used for CarPlay and navigation data exc
 | `2` | GCJ-02 shifted (China mainland) |
 | `3` | GCJ-02 shifted with dead reckoning |
 
-default `00`· gate: 8AA Chinese version / 8LH Country control 04142· token `CP_NMEA_VARIANT`· source: firmware-token
+default `00`· gate: 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao)· token `CP_NMEA_VARIANT`· source: firmware-token
 
 ### `3004/32/11111100b` — Reserved / undocumented (dg3004 byte 32 bits 7-2)  ·  _low_
 
@@ -10810,7 +10810,7 @@ Shows traffic information, such as congestion and incidents, directly on the nav
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 802 Korean version / 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / 645 Radio control US / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country control 04142 / 8LT Country control 04825  / 6AE TeleServices· token `NAVI_TRAFFIC_INFO_MAP`· source: firmware-token
+default `00`· gate: NOT 802 Korean version / 807 Japanese version / 810 Australian version / 838 Canadian version / 8AA Chinese version / 645 Radio control US / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6AE TeleServices· token `NAVI_TRAFFIC_INFO_MAP`· source: firmware-token
 
 ### `3006/2/00000010b` — A to Z search for points of interest  ·  _med_
 
@@ -10876,7 +10876,7 @@ Enables the simplified arrow/schematic navigation view as an alternative to the 
 | `0` | Off |
 | `1` | On |
 
-default `00`· gate: NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_PFEILANSICHT`· source: firmware-token
+default `00`· gate: NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_PFEILANSICHT`· source: firmware-token
 
 ### `3006/2/10000000b` — Intersection zoom  ·  _high_
 
@@ -10909,7 +10909,7 @@ Lets you export saved navigation trips, with their destinations and stops, from 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_TRIP_EXPORT`· source: firmware-token
+default `00`· gate: 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_TRIP_EXPORT`· source: firmware-token
 
 ### `3006/3/00000100b` — Destination import  ·  _low_
 
@@ -10920,7 +10920,7 @@ Lets you import navigation destinations into the head unit, for example from a U
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_DEST_IMPORT`· source: firmware-token
+default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_DEST_IMPORT`· source: firmware-token
 
 ### `3006/3/00001000b` — Destination export  ·  _low_
 
@@ -10931,7 +10931,7 @@ Lets you export saved navigation destinations from the head unit, for example to
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_DEST_EXPORT`· source: firmware-token
+default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_DEST_EXPORT`· source: firmware-token
 
 ### `3006/3/00010000b` — My Points of Interest: import  ·  _med_
 
@@ -10942,7 +10942,7 @@ Lets you import your own points of interest (My Points of Interest) into navigat
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_MYPOI_IMPORT`· source: firmware-token
+default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_MYPOI_IMPORT`· source: firmware-token
 
 ### `3006/3/00100000b` — My Points of Interest: export  ·  _low_
 
@@ -10964,7 +10964,7 @@ Lets navigation record the route you actually drive, so you can save it and use 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_ROUTE_RECORD`· source: firmware-token
+default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_ROUTE_RECORD`· source: firmware-token
 
 ### `3006/3/10000000b` — Arrow display in map views  ·  _low_
 
@@ -10975,7 +10975,7 @@ Offers the arrow display among the navigation map views: a simplified view that 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 606 Navigation system Business / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_MAP_ARROWVIEW`· source: firmware-trace
+default `00`· gate: NOT 606 Navigation system Business / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_MAP_ARROWVIEW`· source: firmware-trace
 
 ### `3006/4/00000001b` — Route option: electronic toll roads  ·  _med_
 
@@ -11008,7 +11008,7 @@ Navigation setting for the route study feature. Best left unchanged.
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825  / ECSM Deletion of Car Sharing Module / 5GC Preparation of Flexible Car Use· token `NAVI_ROUTE_STUDY`· source: firmware-token
+default `00`· gate: 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / ECSM Deletion of Car Sharing Module / 5GC Preparation of Flexible Car Use· token `NAVI_ROUTE_STUDY`· source: firmware-token
 
 ### `3006/4/00001000b` — Speed limit info on navigation display (SLI)  ·  _med_
 
@@ -11084,7 +11084,7 @@ Lets you move the navigation map around with the controller while it's shown in 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `MAP_SCROLL_3D`· source: firmware-token
+default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `MAP_SCROLL_3D`· source: firmware-token
 
 ### `3006/5/00000100b` — Ambiguous destination entry  ·  _low_
 
@@ -11095,7 +11095,7 @@ Setting for how destination entry handles ambiguous input, such as a place name 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `ZIELEINGABE_MEHRDEUTIG`· source: firmware-token
+default `00`· gate: NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `ZIELEINGABE_MEHRDEUTIG`· source: firmware-token
 
 ### `3006/5/00001000b` — POI online search mode (Japan)  ·  _high_
 
@@ -11172,7 +11172,7 @@ Offers the auto zoom map view, which changes the map scale on its own during rou
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_AUTOZOOM`· source: firmware-trace
+default `00`· gate: NOT 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_AUTOZOOM`· source: firmware-trace
 
 ### `3006/6/00000100b` — Scrolling along planned route  ·  _high_
 
@@ -11182,7 +11182,7 @@ Enables the navigation map to automatically scroll/advance along the planned rou
 |---|---|
 | `1` | On |
 
-default `00`· gate: 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_SCROLLING_ALONG_ROUTE`· source: firmware-token
+default `00`· gate: 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_SCROLLING_ALONG_ROUTE`· source: firmware-token
 
 ### `3006/6/00001000b` — Route magnet  ·  _med_
 
@@ -11193,7 +11193,7 @@ Offers the route magnet in navigation, which lets you pull the planned route in 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_ROUTENMAGNET`· source: firmware-trace
+default `00`· gate: 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_ROUTENMAGNET`· source: firmware-trace
 
 ### `3006/6/00110000b` — Undocumented field (PortationMaster byte 6, bits 5-4)  ·  _low_
 
@@ -11221,7 +11221,7 @@ Lets you mark areas on the map for route calculation to avoid, such as a distric
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_AVOID_AREA`· source: firmware-token
+default `00`· gate: 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_AVOID_AREA`· source: firmware-token
 
 ### `3006/7/00000001b` — Online route optimization button  ·  _low_
 
@@ -11271,7 +11271,7 @@ Lets you enter a navigation destination as geographic coordinates (latitude and 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `NAVI_GEO_COORDINATE_INPUT`· source: firmware-token
+default `00`· gate: NOT 606 Navigation system Business / 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `NAVI_GEO_COORDINATE_INPUT`· source: firmware-token
 
 ### `3006/7/01000000b` — Built-in gyro sensor  ·  _med_
 
@@ -11505,7 +11505,7 @@ Selects the measurement unit used for distance and navigation guidance — kilom
 | `2` | Miles and feet |
 | `3` | Kilometres only |
 
-default `01`· gate: 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `EINHEITEN_WEGSTRECKE`· source: firmware-token
+default `01`· gate: 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `EINHEITEN_WEGSTRECKE`· source: firmware-token
 
 ### `3006/18/00010000b` — Portation/product-line flag (byte 18 bit 4)  ·  _low_
 
@@ -11662,7 +11662,7 @@ Offers the ECO PRO route type, which favors fuel-saving roads, in the navigation
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `ECO_PRO_ROUTE_ALPINE`· source: firmware-trace
+default `00`· gate: 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `ECO_PRO_ROUTE_ALPINE`· source: firmware-trace
 
 ### `3006/29/00000010b` — Map colour scheme selection  ·  _med_
 
@@ -11901,7 +11901,7 @@ Offers the route flight, an animated view that flies along the planned route on 
 | `0` | Disabled |
 | `1` | Enabled |
 
-default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country control 04142 / 8LT Country control 04825 · token `ROUTE_FLIGHT`· source: firmware-trace
+default `00`· gate: NOT 609 Professional navigation system / 802 Korean version / 807 Japanese version / 8AA Chinese version / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `ROUTE_FLIGHT`· source: firmware-trace
 
 ### `3006/33/00001100b` — EV charging configuration  ·  _high_
 
@@ -12150,7 +12150,7 @@ Enables Vinfo — BMW's online connected traffic information service — as a tr
 | `0` | Not active |
 | `1` | Active |
 
-default `00`· gate: NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country control 04142 / 8LT Country control 04825  / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices· token `TI_VINFO`· source: firmware-token
+default `00`· gate: NOT 802 Korean version / 807 Japanese version / 810 Australian version / 8AA Chinese version / 825 Radio control Oceania / 6UH Traffic Information / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan) / 6NL Connecting Bluetooth and USB devices including BMW assist / 6AE TeleServices· token `TI_VINFO`· source: firmware-token
 
 ### `3006/36/00100000b` — TI virtual map category: Traffic flow  ·  _med_
 
@@ -12502,7 +12502,7 @@ Controls whether Simplified Chinese (Mandarin, PRC) is available as a selectable
 | `1` | Master (primary language) |
 | `2` | List (secondary/selectable option) |
 
-default `00`· gate: 866 Language version simplified Chinese / 8LH Country control 04142 / 8LT Country control 04825 · token `LANGUAGE_CHINESE_SIMPLIFIED`· source: firmware-token
+default `00`· gate: 866 Language version simplified Chinese / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `LANGUAGE_CHINESE_SIMPLIFIED`· source: firmware-token
 
 ### `3007/4/00000011b` — Traditional Chinese language availability  ·  _high_
 
@@ -12514,7 +12514,7 @@ Controls whether Traditional Chinese (Taiwan/Hong Kong markets) is available as 
 | `1` | Master (primary language) |
 | `2` | List (secondary/selectable option) |
 
-default `00`· gate: NOT 866 Language version simplified Chinese / 8LH Country control 04142 / 8LT Country control 04825 · token `LANGUAGE_CHINESE_TRADITIONAL`· source: firmware-token
+default `00`· gate: NOT 866 Language version simplified Chinese / 8LH Country-specific control 04142 (Hong Kong, Macao) / 8LT Country-specific control 04825 (Taiwan)· token `LANGUAGE_CHINESE_TRADITIONAL`· source: firmware-token
 
 ### `3007/4/00001100b` — Japanese language availability  ·  _high_
 
